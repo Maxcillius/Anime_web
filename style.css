@@ -1,0 +1,225 @@
+body,
+html {
+  background-color: #10002b;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #240046;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  width: 500px;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: fit-content;
+  flex-basis: auto;
+}
+
+.nav p:hover {
+  cursor: pointer;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #9d4edd;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.nav p {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: medium;
+  font-style: normal;
+  text-align: center;
+  transition: all 250ms 0s;
+}
+
+.first-bar,
+.second-bar {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.kaguya,
+.pancreas {
+  margin-left: 50px;
+}
+
+.yourname,
+.weathering {
+  margin-right: 50px;
+}
+
+.kaguya,
+.yourname,
+.pancreas,
+.weathering {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #240046;
+  border-radius: 0 40px 0 0;
+}
+
+.img > img {
+  height: 600px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+h1,
+.info > p {
+  margin: 20px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #cecdcf;
+}
+
+.info > p {
+  font-size: 20px;
+  color: #d1cbd6;
+  font-family: "Rubik", sans-serif;
+  font-weight: medium;
+  font-style: normal;
+  text-align: start;
+}
+
+.icon > img,
+.img > img {
+  display: block;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.rottom,
+.imdb {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.rottom > img,
+.imdb > img {
+  margin-left: 20px;
+}
+
+.rating p {
+  color: white;
+}
+
+@media (max-width: 1812px) {
+  .first-bar,
+  .second-bar {
+    flex-direction: column;
+  }
+
+  .kaguya,
+  .pancreas,
+  .yourname,
+  .weathering {
+    margin: 0 400px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .kaguya-img,
+  .weathering-img,
+  .pancreas-img,
+  .yourname-img {
+    width: fit-content;
+  }
+
+  .kaguya,
+  .pancreas {
+    margin: 0;
+  }
+
+  .yourname,
+  .weathering {
+    margin: 0;
+  }
+
+  .first-bar,
+  .second-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kaguya,
+  .pancreas,
+  .yourname,
+  .weathering {
+    max-width: 805px;
+  }
+}
+
+@media (max-width: 820px) {
+  .kaguya,
+  .yourname,
+  .pancreas,
+  .weathering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 200px;
+  }
+
+  .info > p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+    padding: 0 0;
+  }
+
+  .img > img {
+    height: 400px;
+  }
+}
